@@ -8,8 +8,8 @@ items = ["KIT MEDICO SALEWA", "BARATTOLO TERMITE", "CHIAVE A CRICCHETTO", "ADREN
 def random_obj_generator():
     return [random.choice(items) for _ in range(5)]
 
-def generate_and_save_qr_code():
     # Genera i nostri 5 oggetti casuali
+def generate_and_save_qr_code():
     object_result_random = random_obj_generator()
     print("Oggetti ottenuti:", object_result_random)
 
