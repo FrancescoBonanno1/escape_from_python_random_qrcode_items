@@ -2,11 +2,66 @@ import random
 import qrcode
 import time
 
-# Lista degli items ottenibili
+# Lista degli items 432
 items = ["KIT MEDICO SALEWA", "BARATTOLO TERMITE", "CHIAVE A CRICCHETTO", "ADRENALINA INIETTABILE", "FIALA DI MORFINA", "BATTERIA PER AUTO", "PANETTO DI TRITOLO", "KIT MEDICO GRIZZLY", "KIT MEDICO AUTO", "KIT MEDICO IFAK", "BARATTOLO DI LATTE IN POLVERE", "BOTTIGLIA DI VODKA", "CARNE IN BARATTOLO", "BITCOIN FISICO", "LINGOTTO D'ARGENTO", "SACCA DI SANGUE", "AMPOLLA DI SOLUZIONE FISIOLOGICA", "ATTREZZI PER IL LAVORO DI BASE", "ATTREZZI PER IL LAVORO AVANZATO", "STRUMENTI DI CALIBRAZIONE", "STRUMENTI DI RIPARAZIONE EQUIPAGGIAMENTO", "PIASTRE BALISTICHE TIPO II", "PIASTRE BALISTICHE TIPO III", "PIASTRE BALISTICHE TIPO IV", "BARATTOLO DI ANTIDOLORIFICI", "BARATTOLO DI AMOXICILLINA", "CONFEZIONE DI AMFETAMINA AD USO MEDICO", "BARATTOLO DI VITAMINE"]
-
+LZ = [
+    "ALFA",
+    "BRAVO",
+    "CHARLIE",
+    "DELTA",
+    "ECHO",
+    "FOXTROT",
+    "GOLF",
+    "HOTEL",
+    "INDIA",
+    "JULIETT",
+    "KILO",
+    "LIMA",
+    "MIKE",
+    "NOVEMBER",
+    "OSCAR",
+    "PAPA",
+    "QUEBEC",
+    "ROMEO",
+    "SIERRA",
+    "TANGO",
+    "UNIFORM",
+    "VICTOR",
+    "WHISKEY",
+    "XRAY",
+    "YANKEE",
+    "ZULU"
+]
+alfabeto_nato_morse = [
+    ".- .-.. ..-. .-",
+    "-... .-. .- ...- ---",
+    "-.-. .... .- .-. .-.. .. .",
+    "-.. . .-.. - .-",
+    ". -.-. .... ---",
+    " ..-. --- -..- - .-. --- -",
+    "--. --- .-.. ..-.",
+    ".... --- - . .-..",
+    ".. -. -.. .. .-",
+    ".--- ..- .-.. .. . - -",
+    "-.- .. .-.. ---",
+    ".-.. .. -- .-",
+    "-- .. -.- .",
+    "-. --- ...- . -- -... . .-.",
+    "--- ... -.-. .- .-.",
+    ".--. .- .--. .-",
+    "--.- ..- . -... . -.-.",
+    ".-. --- -- . ---",
+    "... .. . .-. .-. .-",
+    "- .- -. --. ---",
+    "..- -. .. ..-. --- .-. --",
+    "...- .. -.-. - --- .-.",
+    ".-- .... .. ... -.- . -.--",
+    "-..- .-. .- -.--",
+    "-.-- .- -. -.- . .",
+    "--.. ..- .-.. ..-" 
+]
 def random_obj_generator():
-    return [random.choice(items) for _ in range(5)]
+    return [random.choice(alfabeto_nato_morse) for _ in range(5)]
 
     # Genera i nostri 5 oggetti casuali
 def generate_and_save_qr_code():
